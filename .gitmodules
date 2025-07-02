@@ -1,0 +1,6 @@
+[submodule "SignToSpeech"]
+	path = SignToSpeech
+	url = https://github.com/Shubhanshi-negi/SignToSpeech
+[submodule "ObjectDetectionNavigation"]
+	path = ObjectDetectionNavigation
+	url = https://github.com/Shubhanshi-negi/ObjectDetectionNavigation
