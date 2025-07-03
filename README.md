@@ -7,6 +7,7 @@ AI-Powered Smart Glasses — designed with empathy, built with purpose.
 
 These smart glasses are crafted specifically for the visually and hearing impaired, combining multiple assistive features into one wearable solution:
 These glasses are designed to eventually include multiple features like object detection, navigation, sign language to speech, currency recognition, and speech-to-text. 
+
 ----------------------------------------
 👁️‍🗨️ FOR BLIND INDIVIDUALS:
  OBJECT DETECTION & NAVIGATION (OBD):
@@ -43,3 +44,9 @@ git clone --recurse-submodules https://github.com/Shubhanshi-negi/SmartGlasses-A
 
 MY CONTRIBUTION:
 Currently, this repository includes the implementation of two key modules — Object Detection & Navigation and Sign Language to Speech. These were the features I developed as part of my contribution to the project.
+------------------------------------------
+
+📁 Note:
+The trained `.h5` model for SignToSpeech is not included in the repository due to size limits.  
+🔗 [Download it from Google Drive](https://drive.google.com/file/d/1RoNPkZ_BzZfCE9AXmiSz6cqsDgmLKqN8/view?usp=sharing)  
+After downloading, place it inside the `SignToSpeech/` directory.
