@@ -55,8 +55,8 @@ The trained `.h5` model for SignToSpeech is not included in the repository due t
 🔗 [Download it from Google Drive](https://drive.google.com/file/d/1RoNPkZ_BzZfCE9AXmiSz6cqsDgmLKqN8/view?usp=sharing)  
 After downloading, place it inside the `SignToSpeech/` directory. ( SignToSpeech/sign_language_model/ folder.)
 
-To run:
-3. python signtospeech.py
+3. To run:
+python signtospeech.py
 
 ---------------------------------------------
 2️⃣ ObjectDetectionNavigation Module:
