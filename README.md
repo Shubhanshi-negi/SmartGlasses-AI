@@ -44,6 +44,7 @@ git clone --recurse-submodules https://github.com/Shubhanshi-negi/SmartGlasses-A
 
 MY CONTRIBUTION:
 Currently, this repository includes the implementation of two key modules — Object Detection & Navigation and Sign Language to Speech. These were the features I developed as part of my contribution to the project.
+
 ------------------------------------------
 
 📁 Note:
