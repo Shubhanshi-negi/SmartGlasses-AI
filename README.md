@@ -17,21 +17,21 @@ When an obstacle is detected, the glasses announce it through a mic embedded nea
 
 -----------------------------------------
  FOR DEAF INDIVIDUALS:
- Sign Language to Speech:
+ 1. Sign Language to Speech:
 Our model captures hand landmarks via ESP32-CAM and translates sign language into audible speech — enabling two-way communication.
 
-Speech to Text:
+2. Speech to Text:
 Converts spoken words around the user into readable text on a display, allowing the deaf to understand conversations.
 
-Currency Recognition:
+3. Currency Recognition:
 Helps users identify different currency notes accurately through visual detection.
 
 ------------------------------------------
 🔧 HARDWARE INTEGRATION:
-ESP32-CAM modules are embedded in the glasses.
-OLED DISPLAY: The OLED display is connected to a microcontroller that receives transcribed speech from a Python-based speech recognition system. When someone speaks nearby, the system converts their voice into text using speech-to-text, and instantly sends the recognized text to the OLED via serial communication. The display then shows the message live enabling deaf users to read what’s being said around them.
-Speaker: Delivers audio alerts.
-Battery: power glasses for portable use
+1. ESP32-CAM modules are embedded in the glasses.
+2. OLED DISPLAY: The OLED display is connected to a microcontroller that receives transcribed speech from a Python-based speech recognition system. When someone speaks nearby, the system converts their voice into text using speech-to-text, and instantly sends the recognized text to the OLED via serial communication. The display then shows the message live enabling deaf users to read what’s being said around them.
+3. Speaker: Delivers audio alerts.
+4. Battery: power glasses for portable use
 
 Fully wearable, low-power, and built with cost-effective hardware for accessibility.
 -------------------------------------------
@@ -46,22 +46,23 @@ If you already cloned it normally, run this:  git submodule update --init --recu
 📁 SETUP FOR SUBMODULES
 
 1️⃣ SignToSpeech Module:
-cd SignToSpeech
-pip install -r requirements.txt
-📌 Important:
-📁 Note:
+1. cd SignToSpeech
+2. pip install -r requirements.txt
+
+  📌 Important:
+  📁 Note:
 The trained `.h5` model for SignToSpeech is not included in the repository due to size limits.  
 🔗 [Download it from Google Drive](https://drive.google.com/file/d/1RoNPkZ_BzZfCE9AXmiSz6cqsDgmLKqN8/view?usp=sharing)  
 After downloading, place it inside the `SignToSpeech/` directory. ( SignToSpeech/sign_language_model/ folder.)
 
 To run:
-python signtospeech.py
+3. python signtospeech.py
 
 ---------------------------------------------
 2️⃣ ObjectDetectionNavigation Module:
-cd ObjectDetectionNavigation
-pip install -r requirements.txt
-python obd.py
+1. cd ObjectDetectionNavigation
+2. pip install -r requirements.txt
+3. python obd.py
 
 ----------------------------------------------
 🙏 FINAL NOTE-
