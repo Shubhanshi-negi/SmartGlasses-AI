@@ -30,7 +30,7 @@ Helps users identify different currency notes accurately through visual detectio
 🔧 HARDWARE INTEGRATION:
 ESP32-CAM modules are embedded in the glasses.
 OLED DISPLAY: The OLED display is connected to a microcontroller that receives transcribed speech from a Python-based speech recognition system. When someone speaks nearby, the system converts their voice into text using speech-to-text, and instantly sends the recognized text to the OLED via serial communication. The display then shows the message live enabling deaf users to read what’s being said around them.
-Speaker: Delivers audio alerts
+Speaker: Delivers audio alerts.
 Battery: power glasses for portable use
 
 Fully wearable, low-power, and built with cost-effective hardware for accessibility.
@@ -40,14 +40,39 @@ Fully wearable, low-power, and built with cost-effective hardware for accessibil
 > To download all parts properly, clone using this:
 git clone --recurse-submodules https://github.com/Shubhanshi-negi/SmartGlasses-AI.git
 
-------------------------------------------
+If you already cloned it normally, run this:  git submodule update --init --recursive
+
+-------------------------------------------
+📁 SETUP FOR SUBMODULES
+
+1️⃣ SignToSpeech Module:
+cd SignToSpeech
+pip install -r requirements.txt
+📌 Important:
+📁 Note:
+The trained `.h5` model for SignToSpeech is not included in the repository due to size limits.  
+🔗 [Download it from Google Drive](https://drive.google.com/file/d/1RoNPkZ_BzZfCE9AXmiSz6cqsDgmLKqN8/view?usp=sharing)  
+After downloading, place it inside the `SignToSpeech/` directory. ( SignToSpeech/sign_language_model/ folder.)
+
+To run:
+python signtospeech.py
+
+---------------------------------------------
+2️⃣ ObjectDetectionNavigation Module:
+cd ObjectDetectionNavigation
+pip install -r requirements.txt
+python obd.py
+
+----------------------------------------------
+🙏 FINAL NOTE-
+Make sure:
+1. You have a camera and mic connected
+2. Your system allows camera access for OpenCV
+3. Python ≥ 3.7 is recommended
+
+-----------------------------------------------
 
 MY CONTRIBUTION:
 Currently, this repository includes the implementation of two key modules — Object Detection & Navigation and Sign Language to Speech. These were the features I developed as part of my contribution to the project.
 
-------------------------------------------
 
-📁 Note:
-The trained `.h5` model for SignToSpeech is not included in the repository due to size limits.  
-🔗 [Download it from Google Drive](https://drive.google.com/file/d/1RoNPkZ_BzZfCE9AXmiSz6cqsDgmLKqN8/view?usp=sharing)  
-After downloading, place it inside the `SignToSpeech/` directory.
